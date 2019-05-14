@@ -1,1 +1,1 @@
-# Competitive
+# Doubly-Competitive Distribution Estimation

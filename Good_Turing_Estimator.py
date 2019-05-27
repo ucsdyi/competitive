@@ -3,7 +3,7 @@ log = np.log
 exp = np.exp
 
 ##### The improved Good-Turing estimator 
-##### "Competitive Distribution Estimation: Why is Good-Turing Good" by Orlitsky & Suresh, 2015.
+##### "Competitive Distribution Estimation: Why is Good-Turing Good" by Orlitsky & Suresh (NeurIPS2015).
 def Good_Turing(D_multiplicity, profile, k):
     n = 0
     Key = D_multiplicity.keys()

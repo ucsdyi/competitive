@@ -57,8 +57,8 @@ def experiment(distribution_name, r):
     fig.savefig(save_name)
 
 def main(): 
-    # Options for distribution_name: 'uniform','two-steps'
-    D_list = ['uniform', 'two-steps'] #List of distributions
+    # Options for distribution_name: 'uniform','two-step'
+    D_list = ['uniform', 'two-step'] #List of distributions
     r = 1 # Number of independent trials
     for distribution_name in D_list:
         print("Performing experiments for "+distribution_name+".\n")

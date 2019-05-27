@@ -15,7 +15,7 @@ def Emu(mu1, mu, T):
     return A
 
 def D_new(D_multiplicity, profile, k):
-    c1, c2, c3 = 2, 0.5, 1 # Hyper-parameters, have not been optimized
+    c1, c2, c3 = 2, 0.5, 1 # Hyper-parameters, not optimized
     n = 0
     Key = D_multiplicity.keys()
     

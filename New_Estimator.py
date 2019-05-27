@@ -2,7 +2,7 @@ import numpy as np
 log = np.log
 exp = np.exp
 
-##### The new estimator
+##### Proposed estimator
 def Emu(mu1, mu, T):
     A = 1/T
     B = 1

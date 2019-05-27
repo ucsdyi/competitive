@@ -13,7 +13,7 @@ def get_distribution(dist_name, k):
     k = int(k)
     if dist_name == 'uniform':
         raw_distribution = [1] * k
-    elif dist_name == 'two-steps':
+    elif dist_name == 'two-step':
         raw_distribution = [1] * (k//2) + [5] * (k-k//2)
     return raw_distribution
 

@@ -2,6 +2,7 @@ import numpy as np
 log = np.log
 exp = np.exp
 
+##### Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML2019)
 ##### Proposed estimator
 def Emu(mu1, mu, T):
     A = 1/T

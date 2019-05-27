@@ -11,7 +11,7 @@ from Good_Turing_Estimator import Good_Turing
 log = np.log
 exp = np.exp
 
-##### Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML 2019)
+##### Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML2019)
 ##### Plots will be saved to the current working directory
 
 def experiment(distribution_name, r):

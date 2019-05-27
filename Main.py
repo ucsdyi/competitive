@@ -11,8 +11,8 @@ from Good_Turing_Estimator import Good_Turing
 log = np.log
 exp = np.exp
 
-##### Code for paper "Doubly-Competitive Distribution Estimation" by Yi Hao and Alon Orlitsky (ICML 2019)
-##### Plots will be saved to the current directory.
+##### Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML 2019)
+##### Plots will be saved to the current working directory
 
 def experiment(distribution_name, r):
     k = 10000 # Alphabet size
@@ -28,9 +28,9 @@ def experiment(distribution_name, r):
             profile_counter = Counter(multiplicity)
             profile = [profile_counter[i] for i in range(1,max(multiplicity)+1)]
             
-            # Improved Good-Turing estimator in (Orlitsky & Suresh, 2015).
+            # Improved Good-Turing estimator in (Orlitsky & Suresh, 2015):
             labeled_GT = Good_Turing(D_multiplicity,profile,k)
-            # Proposed estimator.
+            # Proposed estimator:
             labeled_New = D_new(D_multiplicity,profile,k)
             
             GT_est += KL_divergence(labeled_GT,distribution)
@@ -57,9 +57,9 @@ def experiment(distribution_name, r):
     fig.savefig(save_name)
 
 def main(): 
-    # Options for distribution_name: 'uniform','two-steps'.
-    D_list = ['uniform', 'two-steps']
-    r = 1 # Number of independent repetitions
+    # Options for distribution_name: 'uniform','two-steps'
+    D_list = ['uniform', 'two-steps'] #List of distributions
+    r = 1 # Number of independent trials
     for distribution_name in D_list:
         print("Performing experiments for "+distribution_name+".\n")
         experiment(distribution_name,r)

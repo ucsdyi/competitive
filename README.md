@@ -1,4 +1,4 @@
-# Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML2019)
+# Code for paper "Doubly-Competitive Distribution Estimation" by Hao & Orlitsky (ICML 2019)
 Paper is available at http://proceedings.mlr.press/v97/hao19a.html
 
 # Abstract
